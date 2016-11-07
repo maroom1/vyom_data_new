@@ -1,0 +1,41 @@
+<div class="jumbotron text-center">
+	<h1>Home Page</h1>
+	
+	<p>{{ message }}</p>
+	<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1>Weather Alert</h1>
+			</div>
+		</div>
+		<div class="row">
+			<form class="form-horizantal">
+				<div class="form-group">
+					<div class="col-sm-4 col-sm-offset-4">
+						<input type="text" class="form-control text-center" id="inputCity" placeholder="Enter your City" ng-model="city">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-success" ng-click="display()">search</button>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Current Temperature</h2>
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-2">
+				<h4>{{temperature.main.temp}}</h4>
+			</div>
+			<div class="col-sm-2">
+				<h4>{{temperature.weather[0].description}}</h4>
+			</div>
+			<div class="col-sm-2">
+				<img src="http://openweathermap.org/img/w/{{temperature.weather[0].icon}}.png">
+			</div>
+			
+			
+			
+			
+		</div>
+
+	</div>
